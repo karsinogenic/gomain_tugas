@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	modulasi "github.com/karsinogenic/gomodul_tugas"
+)
 
 func main() {
 	fmt.Println("coba")
-	//.Troli()
+	fmt.Println(modulasi.Kasir(10000, 2))
+
 }
