@@ -8,8 +8,11 @@ import (
 
 func main() {
 	fmt.Println("coba")
-	modulasi.Troli(10000, 2)
+	bayar, pilihan := modulasi.Troli(100, 2)
+	if pilihan == true {
+		fmt.Println("belanja lagi")
+	}
 	fmt.Println("troli : ")
-	fmt.Println("kembalinya :", modulasi.Kasir(10000, 2000))
+	fmt.Println("kembalinya :", modulasi.Kasir(10000, bayar))
 
 }
