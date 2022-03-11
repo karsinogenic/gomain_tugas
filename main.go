@@ -1,11 +1,8 @@
 package main
 
-import {
-	"fmt"
-	
-}
+import "fmt"
 
 func main() {
 	fmt.Println("coba")
-	modulasi.Troli()
+	//.Troli()
 }
