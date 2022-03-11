@@ -8,6 +8,8 @@ import (
 
 func main() {
 	fmt.Println("coba")
-	fmt.Println(modulasi.Kasir(10000, 2))
+	modulasi.Troli(10000, 2)
+	fmt.Println("troli : ")
+	fmt.Println("kembalinya :", modulasi.Kasir(10000, 2000))
 
 }
