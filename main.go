@@ -20,11 +20,15 @@ type item struct {
 // }
 
 func main() {
-	//var minyak = item{"minyak", 10, 30000, 0, 0}
+	//var minyak = modul.Item{"minyak", 10, 30000, 0, 0}
 	fmt.Println("Selamat datang mau belanja apa ? ")
 	//modul.Coba1(12)
 	modul.Kasir(12, 12)
 	modul.Coba1(12)
+	//minyak.Belanja1()
+	// welcome := modul.Item
+	// welcome.SelamatDatang("Budi")
+
 	//fmt.Println("1.Minyak,stock:%d,harga:%d", minyak.stock, minyak.harga)
 	//modulasi.Coba(30)
 	//mbanyak, mtotal := 0

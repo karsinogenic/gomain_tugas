@@ -2,4 +2,4 @@ module github.com/karsinogenic/gomain_tugas
 
 go 1.17
 
-require github.com/karsinogenic/gomodul_tugas v1.2.0
+require github.com/karsinogenic/gomodul_tugas v1.4.0
