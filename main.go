@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	modulasi "github.com/karsinogenic/gomodul_tugas"
 )
 
 type item struct {
@@ -20,8 +22,9 @@ func main() {
 	var minyak = item{"minyak", 10, 30000, 0, 0}
 	fmt.Println("Selamat datang mau belanja apa ? ")
 	fmt.Println("1.Minyak,stock:%s,harga:%s", minyak.stock, minyak.harga)
-	mbanyak, mtotal := minyak.Belanja1()
-	fmt.Println(mbanyak, mtotal)
+	modulasi.Coba()
+	//mbanyak, mtotal := 0
+	//fmt.Println(mbanyak, mtotal)
 	//var terigu = item{"terigu", 15, 15000, 0}
 	//var item = [2]string{"minyak", "terigu"}
 
