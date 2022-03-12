@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	modul "github.com/karsinogenic/gomodul_tugas"
+	//modulasi "github.com/karsinogenic/gomodul_tugas"
 )
 
 type item struct {
@@ -21,7 +22,8 @@ type item struct {
 func main() {
 	//var minyak = item{"minyak", 10, 30000, 0, 0}
 	fmt.Println("Selamat datang mau belanja apa ? ")
-	modul.Coba()
+	modul.Coba1(12)
+	modul.Kasir(12, 12)
 	//fmt.Println("1.Minyak,stock:%d,harga:%d", minyak.stock, minyak.harga)
 	//modulasi.Coba(30)
 	//mbanyak, mtotal := 0
