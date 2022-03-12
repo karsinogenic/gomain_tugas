@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	modulasi "github.com/karsinogenic/gomodul_tugas"
+	modul "github.com/karsinogenic/gomodul_tugas"
 )
 
 type item struct {
@@ -19,10 +19,11 @@ type item struct {
 // }
 
 func main() {
-	var minyak = item{"minyak", 10, 30000, 0, 0}
+	//var minyak = item{"minyak", 10, 30000, 0, 0}
 	fmt.Println("Selamat datang mau belanja apa ? ")
-	fmt.Println("1.Minyak,stock:%s,harga:%s", minyak.stock, minyak.harga)
-	modulasi.Coba()
+	modul.Coba()
+	//fmt.Println("1.Minyak,stock:%d,harga:%d", minyak.stock, minyak.harga)
+	//modulasi.Coba(30)
 	//mbanyak, mtotal := 0
 	//fmt.Println(mbanyak, mtotal)
 	//var terigu = item{"terigu", 15, 15000, 0}
