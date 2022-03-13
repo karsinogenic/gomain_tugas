@@ -8,3 +8,11 @@ github.com/karsinogenic/gomodul_tugas v1.3.0 h1:JOhx7hID62uWAyCkT4Bb+ruYke3c7fHL
 github.com/karsinogenic/gomodul_tugas v1.3.0/go.mod h1:pnGUZg2Uf4On5ivji0hzxNx9KwY5B+G7aDBxuKcamqE=
 github.com/karsinogenic/gomodul_tugas v1.4.0 h1:sZpJBfKxli+vGYQ0J59HmDOufVZIN812tVMWo4v+MDc=
 github.com/karsinogenic/gomodul_tugas v1.4.0/go.mod h1:pnGUZg2Uf4On5ivji0hzxNx9KwY5B+G7aDBxuKcamqE=
+github.com/karsinogenic/gomodul_tugas v1.5.0 h1:jTMKam+cvTidJaSs+n81fUOcFtk4EE95BL7yVOxeWHk=
+github.com/karsinogenic/gomodul_tugas v1.5.0/go.mod h1:pnGUZg2Uf4On5ivji0hzxNx9KwY5B+G7aDBxuKcamqE=
+github.com/karsinogenic/gomodul_tugas v1.6.0 h1:7PmfTcIq7mJw2wNAwVj8c24e8z5+2h6KT0B/rsYldl4=
+github.com/karsinogenic/gomodul_tugas v1.6.0/go.mod h1:pnGUZg2Uf4On5ivji0hzxNx9KwY5B+G7aDBxuKcamqE=
+github.com/karsinogenic/gomodul_tugas v1.7.0 h1:aUGw2/qnDEMqt16vJ4WAul5fkVU5HW3ndTwG5dC+CgY=
+github.com/karsinogenic/gomodul_tugas v1.7.0/go.mod h1:pnGUZg2Uf4On5ivji0hzxNx9KwY5B+G7aDBxuKcamqE=
+github.com/karsinogenic/gomodul_tugas/v2 v2.0.0 h1:kjJYuCnppknfTw0hpneufvh/+Cz3YOKKZefSdMRtjQw=
+github.com/karsinogenic/gomodul_tugas/v2 v2.0.0/go.mod h1:+pIBfip3gSFfkqQBkbk6P0C7pDXLSnRzcYCeW1IddWI=

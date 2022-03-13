@@ -3,54 +3,81 @@ package main
 import (
 	"fmt"
 
-	modul "github.com/karsinogenic/gomodul_tugas"
-	//modulasi "github.com/karsinogenic/gomodul_tugas"
+	modul "github.com/karsinogenic/gomodul_tugas/v2"
 )
-
-type item struct {
-	nama     string
-	stock    int
-	harga    int
-	nBelanja int
-	nTotal   int
-}
 
 // func coba(item [2]string) {
 // 	fmt.Println(item)
 // }
 
 func main() {
-	//var minyak = modul.Item{"minyak", 10, 30000, 0, 0}
-	fmt.Println("Selamat datang mau belanja apa ? ")
+	var choice int
+	var troli_item = []string{"a", "Terigu"}
+	var troli_bnyk = []int{2, 0}
+	var minyak = modul.Item{"minyak", 10, 30000, 0, 0}
+	var terigu = modul.Item{"terigu", 15, 15000, 0, 0}
+	//var flag = true
+	saldo, nama, ismember := modul.AnonymousData()
+
+	//for flag==true{
+ulang2:
+	fmt.Printf("Selamat datang mau belanja apa ? ")
+
+ulang3:
+	fmt.Printf("1.Minyak,stock:%d,harga:%d||2.Terigu,stock:%d,harga:%d||3.Lihat Saldo\n", minyak.Stock, minyak.Harga, terigu.Stock, terigu.Harga)
+	fmt.Print("Pilihan anda : ")
+	fmt.Scanln(&choice)
 	//modul.Coba1(12)
-	modul.Kasir(12, 12)
-	modul.Coba1(12)
-	//minyak.Belanja1()
-	// welcome := modul.Item
-	// welcome.SelamatDatang("Budi")
+	switch choice {
+	case 1:
+		Stock, Belanja, Ntotal := minyak.Belanja1()
+		minyak.Nbelanja = Belanja
+		minyak.Ntotal = Ntotal
+		minyak.Stock = Stock
+		//if flag=
+		troli_item[0] = "minyak"
+		troli_bnyk[0] = minyak.Nbelanja
+		//fmt.Println(troli_item, troli_bnyk)
 
-	//fmt.Println("1.Minyak,stock:%d,harga:%d", minyak.stock, minyak.harga)
-	//modulasi.Coba(30)
-	//mbanyak, mtotal := 0
-	//fmt.Println(mbanyak, mtotal)
-	//var terigu = item{"terigu", 15, 15000, 0}
-	//var item = [2]string{"minyak", "terigu"}
+		//flag:=1
+	case 2:
+		Stock, Belanja, Ntotal := terigu.Belanja1()
+		terigu.Nbelanja = Belanja
+		terigu.Ntotal = Ntotal
+		terigu.Stock = Stock
+		//if flag=
+		troli_item[1] = "Terigu"
+		troli_bnyk[1] = terigu.Nbelanja
+		//fmt.Println(troli_item, troli_bnyk)
+	case 3:
+		fmt.Printf("Nama : %s,Saldo : %d,Status Member : %t", nama, saldo, ismember)
+		goto ulang2
+	default:
+		fmt.Println("Input salah")
+		goto ulang2
+	}
+	total := minyak.Ntotal + terigu.Ntotal
+	ulang3 := modul.Troli(troli_item, troli_bnyk, total) //function 1 return
+	if ulang3 == true {
+		goto ulang3
+	} else {
+		//nothing
+	}
 
-	// coba(item)
-	// fmt.Println(minyak, terigu)
+	Diskon := func(IsMember bool) float64 { //anonymous func
+		switch IsMember {
+		case true:
+			return 0.1
+		case false:
+			return 0
+		default:
+			return 0
+		}
+	}
 
-	//banyak(item)
-
-	// switch belanja {
-	// case 1:
-	// 	bayar, pilihan := modulasi.Troli(100, 2)
-	// }
-	// fmt.Println("coba")
-	// bayar, pilihan := modulasi.Troli(100, 2)
-	// if pilihan == true {
-	// 	fmt.Println("belanja lagi")
-	// }
-	// fmt.Println("troli : ")
-	// fmt.Println("kembalinya :", modulasi.Kasir(10000, bayar))
-
+	totaldiskon, sisa := modul.Kasir(Diskon(ismember), saldo, total)
+	fmt.Printf("\nAnda belanja sebesar %d rupiah, sisa saldo anda kini %d rupiah\n", totaldiskon, sisa)
+	fmt.Println("===============Terimakasih===============")
 }
+
+//}
